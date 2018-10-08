@@ -342,6 +342,10 @@ a {
     color: #00c6d7;
 }
 
+.blue-link{
+    color: #fff !important;
+}
+
 a:focus,
 a:hover,
 a:active {
