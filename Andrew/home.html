@@ -1,0 +1,159 @@
+
+<!DOCTYPE html><html lang='en' class=''>
+    <head><script src='//static.codepen.io/assets/editor/live/console_runner-ce3034e6bde3912cc25f83cccb7caa2b0f976196f2f2d52303a462c826d54a73.js'></script><script src='//static.codepen.io/assets/editor/live/css_live_reload_init-e9c0cc5bb634d3d14b840de051920ac153d7d3d36fb050abad285779d7e5e8bd.js'></script><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" /><link rel="mask-icon" type="" href="//static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" /><link rel="canonical" href="https://codepen.io/chpecson/pen/vKmbkv/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='https://www.w3schools.com/lib/w3.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body>
+    <div class="w3-top">
+      <ul class="w3-navbar" id="myNavbar">
+        <li><a href="#" class="w3-padding-large">Andrew</a></li>
+        <li class="w3-hide-small w3-right">
+          <a href="#contact" class="w3-padding-large">Contact</a>
+        </li>
+        <li class="w3-hide-small w3-right">
+          <a href="#portfolio" class="w3-padding-large">Portfolio</a>
+        </li>
+        <li class="w3-hide-small w3-right">
+          <a href="#about" class="w3-padding-large">About</a>
+        </li>
+      </ul>
+    </div>
+    
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container">
+      <div class="w3-display-middle" style="white-space:nowrap;">
+        <h1 class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">ANDREW<span class="w3-hide-small"> PRICE</span></h1>
+      </div>
+    </div>
+    
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+      <h2 class="w3-center">ABOUT ME</h2>
+      <p> My relationship with coding began in 2014 when I began designing and creating basic webpages
+          in high school; within the past year I have picked up coding on a much more advanced level and I've managed
+          to touch on many different languages and frameworks: Java, MYSQL, JavaScript frameworks such as Angular and 
+          by extention Node.js just to name a few.<br><br>
+          As a programmer I'm constantly looking for and finding new and exciting ways to learn to code.
+          Hopefully this page will give you some insight into my learning process and will allow you to see my
+          progress as I discover new ways to do things that I never knew possible
+      </p>
+      <!--  Profile Picture and Description  -->
+      <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-section">
+          <img src="https://instagram.fjnb6-1.fna.fbcdn.net/vp/860b074ec3ffe262c7ead683b36ca8b3/5C549E48/t51.2885-19/s150x150/34869233_184874768882408_7286083242212458496_n.jpg" id="profile" class="w3-circle" alt="Photo of Me">
+        </div>
+    
+        <!-- Hide this text on small devices -->
+        <div class="w3-col m6 w3-hide-small w3-section">
+          <p>Looking to become the next big thing... <br>
+            watch this space.
+        </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container" id="portfolio">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-light-grey w3-wide">PORTFOLIO</span>
+      </div>
+    </div>
+    
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64">
+      <h2 class="w3-center">MY WORK</h2>
+      <p class="w3-center"><em>Here are some of my more enjoyed projects.<br> All projects can be found on <a href="https://www.github.com/andrewpricee">GitHub</a>.</em></p><br>
+    
+      <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+      <div class="w3-row-padding w3-center">
+        <div class="w3-col m3">
+          <img src="css/img/mytunes.png" style="width: 100%" onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+    
+        <div class="w3-col m3">
+          <img src="css/img/sourceWorks.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+    
+        <div class="w3-col m3">
+          <img src="css/img/Reminders.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+    
+        <div class="w3-col m3">
+          <img src="css/img/login.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+      <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" style="max-width:100%">
+      </div>
+    </div>
+    
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container" id="contact">
+      <div class="w3-display-middle">
+        <h2 class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</h2>
+      </div>
+    </div>
+    
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64">
+      <h3 class="w3-left">Get In Touch</h3><br>
+    
+      <address class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col m8 w3-container w3-section">
+          <div class="w3-large w3-margin-bottom">
+            <i class="fa fa-map-marker w3-hover-text-black" style="width:30px"></i> Sandton, GAU, South Africa<br>
+            <i class="fa fa-phone w3-hover-text-black" style="width:30px"></i> Phone: +27 663064936<br>
+            <i class="fa fa-envelope w3-hover-text-black" style="width:30px"> </i> <a href="mailto:kotescodes.io@gmail.com">Email</a><br>
+          </div>
+
+
+
+<!-- Literally have no idea why this code wont work if youre reading this and figure it out please help -->
+
+
+          <!-- <p>Leave me a note:</p>
+          <form method="post" name="myemailform" action="php/form-to-email.php">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="name" name="name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="email" name="email">
+            </div>
+          </div>
+          <textarea class="w3-input w3-border w3-hover-light-grey" placeholder="message" name="message"></textarea><br>
+                <input type="submit" value="Send Form"> 
+            </form> -->
+        </div>
+   
+      </address>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black cf">
+      <div class="w3-half">
+        <a target="_blank" href="https://www.codecollege.co.za">
+          <i class="fa fa-fire fa-2x"></i>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/kotescodes.io">
+          <i class="fa fa-instagram fa-2x"></i>
+        </a>
+        <a target="_blank" href="https://github.com/andrewpricee">
+          <i class="fa fa-github fa-2x"></i>
+        </a>
+      </div>
+    </footer>
+    <script src='//static.codepen.io/assets/common/stopExecutionOnTimeout-41c52890748cd7143004e05d3c5f786c66b19939c4500ce446314d1748483e13.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js'></script>
+    <script src="js/main.js"></script>
+    </body>
+    </html>
