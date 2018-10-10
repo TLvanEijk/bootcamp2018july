@@ -93,8 +93,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
       transition: color 1s;
     }
     
-    .fa-fire:hover {
-      color: purple;
+    .fa-graduation-cap:hover {
+      color: #80379b;
     }
     
     .fa-instagram:hover {
